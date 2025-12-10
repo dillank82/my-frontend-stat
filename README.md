@@ -2,7 +2,7 @@
 ## Описание
 Веб-приложение разработанное для объективации и визуализации личного прогресса в изучении фронтенд-разработки.
 ## Демонстрация
-https://dillank-frontend-stat
+https://dillank-frontend-stat.vercel.app
 ## Технологии
 Frontend: React, Redux Toolkit, Vite, Jest (юнит-тестирование).
 Backend: Node.js, Express, MongoDB.
