@@ -1,0 +1,42 @@
+/* Базовые настройки для всех вариантов */
+.stat-display-container {
+    display: flex;
+    width: 100%;
+    align-items: baseline;
+}
+.stat-display-heading {
+    white-space: nowrap;
+}
+.stat-display-value {
+    width: 2em;
+    display: flex;
+    justify-content: center;
+}
+.stat-display-container .filling-dots {
+    margin: 0 0.5em;
+    flex-grow: 1;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    min-width: 0;
+}
+
+/* Basic (по умолчанию) */
+.stat-display--basic {
+    /* width обязательно для всех вариантов, иначе ломаются точки */
+    width: 100%; 
+    font-size: 1.75em;
+}
+.stat-display--basic .filling-dots {
+    font-size: 75%;
+}
+
+/* Small (уменьшенный и прозрачный) */
+.stat-display--small {
+    width: 75%;
+    font-size: 1.25em;
+    opacity: 0.66;
+}
+.stat-display--small .filling-dots {
+    font-size: 66%;
+}

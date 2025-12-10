@@ -1,0 +1,19 @@
+.prev-next-btn {
+    background-color: transparent;
+    transition: none;
+    border: none;
+    outline: none;
+    padding-top: 15px;
+    padding-inline: 0.25em;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.prev-next-btn:hover {
+    border: none;
+}
+
+.prev-next-btn:focus,
+.prev-next-btn:focus-visible {
+    outline: none;
+}

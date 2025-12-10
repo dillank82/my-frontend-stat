@@ -1,0 +1,14 @@
+.circular-percentage-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circular-percentage-container *:last-child {
+    position: absolute;
+}
+
+.circular-percentage-container svg {
+    overflow: visible;
+}

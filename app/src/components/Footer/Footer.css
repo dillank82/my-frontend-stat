@@ -1,0 +1,17 @@
+footer {
+    float: inline-end;
+    opacity: 0.75;
+    font-size: 1.25em;
+    display: flex;
+    flex-direction: column;
+    width: 372px;
+    line-height: 1;
+    margin-bottom: 0.5em;
+}
+
+footer a,
+footer a:visited
+footer a:hover {
+    opacity: 0.75;
+    color: white;
+}

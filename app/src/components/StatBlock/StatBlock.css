@@ -1,0 +1,7 @@
+.stat-block {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-grow: 1;
+    gap: 10em;
+}
