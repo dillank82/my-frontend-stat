@@ -1,7 +1,7 @@
 import { Router } from "express";
 import SiteStatistic from "../models/SiteStatistic/SiteStatistic.js";
 
-const router = Router()
+const router: Router = Router()
 
 router.post('/', async (req, res) => {
     const { siteId, name, solved, failed, orderIndex } = req.body
