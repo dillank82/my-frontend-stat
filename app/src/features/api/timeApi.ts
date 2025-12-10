@@ -4,7 +4,7 @@ export interface timeApiType {
         minutes: number
     }
 
-const URL = 'http://localhost:3000/time'
+const URL = (process.env.URI || 'http://localhost:3000') + '/time'
 
 export const timeApi = createApi({
     reducerPath: 'timeApi',

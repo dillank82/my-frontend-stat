@@ -8,7 +8,7 @@ export interface tasksApiType {
     orderIndex: number
 }
 
-const URL = 'http://localhost:3000/sites'
+const URL = (process.env.URI || 'http://localhost:3000') + '/sites'
 
 export const tasksApi = createApi({
     reducerPath: 'tasksApi',

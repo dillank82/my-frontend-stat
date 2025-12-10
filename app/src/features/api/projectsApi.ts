@@ -4,7 +4,7 @@ export interface projectsApiType {
     projectsCount: number,
 }
 
-const URL = 'http://localhost:3000/projects'
+const URL = (process.env.URI || 'http://localhost:3000') + '/projects'
 
 export const projectsApi = createApi({
     reducerPath: 'projectsApi',
