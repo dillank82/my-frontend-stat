@@ -7,3 +7,8 @@
         font-size: 4em;
     }
 }
+@media (max-width: 883px) {
+    .time-counter {
+        font-size: 3.5em;
+    }
+}
