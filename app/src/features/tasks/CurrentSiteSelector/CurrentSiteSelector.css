@@ -9,3 +9,8 @@
         font-size: 2.75em;
     }
 }
+@media (max-width: 1005px) {
+    .site-selector {
+        font-size: 2.5em;
+    }
+}
