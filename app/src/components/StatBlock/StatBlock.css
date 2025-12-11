@@ -11,3 +11,10 @@
     gap: 5em;
   }
 }
+@media (max-width: 720px) {
+  .stat-block {
+    align-items: center;
+    flex-direction: column;
+    gap: 3em;
+  }
+}
