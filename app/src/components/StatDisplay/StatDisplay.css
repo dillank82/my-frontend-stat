@@ -25,7 +25,7 @@
 .stat-display--basic {
     /* width обязательно для всех вариантов, иначе ломаются точки */
     width: 100%; 
-    font-size: 1.75em;
+    font-size: 1.65em;
 }
 .stat-display--basic .filling-dots {
     font-size: 75%;
