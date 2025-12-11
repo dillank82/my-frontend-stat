@@ -3,3 +3,9 @@
     align-items: center;
     font-size: 3em;
 }
+
+@media (max-width: 1083px) {
+    .site-selector {
+        font-size: 2.75em;
+    }
+}
