@@ -17,8 +17,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%;
-  margin-inline: 5%;
+  width: 100%;
 
   border-radius: 2.5em;
   border-style: solid;
@@ -71,5 +70,12 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@media (max-width: 1500px) {
+  #root {
+    border: none;
+    box-shadow: none;
   }
 }
