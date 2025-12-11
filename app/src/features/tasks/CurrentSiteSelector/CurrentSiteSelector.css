@@ -19,3 +19,8 @@
         font-size: 2em;
     }
 }
+@media (max-width: 782px) {
+    .site-selector {
+        font-size: 1.75em;
+    }
+}

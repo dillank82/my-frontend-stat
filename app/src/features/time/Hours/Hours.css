@@ -12,3 +12,8 @@
         font-size: 3.5em;
     }
 }
+@media (max-width: 782px) {
+    .time-counter {
+        font-size: 3em;
+    }
+}

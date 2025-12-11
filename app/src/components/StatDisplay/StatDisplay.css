@@ -65,10 +65,15 @@
     .stat-display--basic {
         font-size: 1.1em;
     }
-
     .stat-display--small {
-        width: 75%;
         font-size: 1.1em;
-        opacity: 0.66;
+    }
+}
+@media (max-width: 782px) {
+    .stat-display--basic {
+        font-size: 1em;
+    }
+    .stat-display--small {
+        font-size: 1em;
     }
 }
