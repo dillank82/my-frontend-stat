@@ -65,3 +65,10 @@
         font-size: 1.2em;
     }
 }
+@media (max-width: 883px) {
+    .stat-display--small {
+        width: 75%;
+        font-size: 1.1em;
+        opacity: 0.66;
+    }
+}

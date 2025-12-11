@@ -14,3 +14,8 @@
         font-size: 2.5em;
     }
 }
+@media (max-width: 883px) {
+    .site-selector {
+        font-size: 2em;
+    }
+}
