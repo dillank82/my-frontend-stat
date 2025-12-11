@@ -44,18 +44,24 @@
 @media (max-width: 1200px) {
     .stat-display--basic {
     /* width обязательно для всех вариантов, иначе ломаются точки */ 
-    font-size: 1.5em;
+        font-size: 1.5em;
     }
 }
 @media (max-width: 1083px) {
     .stat-display--basic {
     /* width обязательно для всех вариантов, иначе ломаются точки */ 
-    font-size: 1.4em;
+        font-size: 1.4em;
     }
 }
 @media (max-width: 1005px) {
     .stat-display--basic {
     /* width обязательно для всех вариантов, иначе ломаются точки */ 
-    font-size: 1.3em;
+        font-size: 1.3em;
+    }
+}
+@media (max-width: 935px) {
+    .stat-display--basic {
+    /* width обязательно для всех вариантов, иначе ломаются точки */ 
+        font-size: 1.2em;
     }
 }
