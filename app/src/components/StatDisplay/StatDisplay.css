@@ -40,3 +40,10 @@
 .stat-display--small .filling-dots {
     font-size: 66%;
 }
+
+@media (max-width: 1200px) {
+  .stat-display--basic {
+    /* width обязательно для всех вариантов, иначе ломаются точки */ 
+    font-size: 1.5em;
+    }
+}

@@ -5,3 +5,9 @@
     flex-grow: 1;
     gap: 10em;
 }
+
+@media (max-width: 1200px) {
+  .stat-block {
+    gap: 5em;
+  }
+}
