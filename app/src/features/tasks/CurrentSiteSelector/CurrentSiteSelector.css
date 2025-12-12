@@ -3,3 +3,24 @@
     align-items: center;
     font-size: 3em;
 }
+
+@media (max-width: 1083px) {
+    .site-selector {
+        font-size: 2.75em;
+    }
+}
+@media (max-width: 1005px) {
+    .site-selector {
+        font-size: 2.5em;
+    }
+}
+@media (max-width: 883px) {
+    .site-selector {
+        font-size: 2em;
+    }
+}
+@media (max-width: 782px) {
+    .site-selector {
+        font-size: 1.75em;
+    }
+}

@@ -9,3 +9,14 @@
    margin-bottom: 5px;
    width: 100%;
 }
+
+@media (max-width: 720px) {
+    .total-stats {
+        margin-top: 0;
+    }
+}
+@media (max-width: 661px) {
+    .total-stats {
+        width: 162px;
+    }
+}

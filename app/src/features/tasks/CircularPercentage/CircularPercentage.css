@@ -12,3 +12,9 @@
 .circular-percentage-container svg {
     overflow: visible;
 }
+
+@media (max-width: 883px) {
+    .circular-percentage-container svg {
+        width: 95%;
+    }
+}

@@ -2,3 +2,14 @@
     font-size: 2em;
     font-weight: 500;
 }
+
+@media (max-width: 782px) {
+    .percent-of-solved-tasks {
+        font-size: 1.75em;
+    }
+}
+@media (max-width: 661px) {
+    .percent-of-solved-tasks {
+        font-size: 1.5em;
+    }
+}

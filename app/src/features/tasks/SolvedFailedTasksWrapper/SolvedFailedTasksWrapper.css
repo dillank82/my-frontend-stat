@@ -5,3 +5,9 @@
     align-items: center;
     margin-top: 1.5em;
 }
+
+@media (max-width: 720px) {
+    .solved-failed-tasks-wrapper {
+        margin-top: 0em;
+    }
+}
