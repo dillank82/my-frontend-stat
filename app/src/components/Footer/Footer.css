@@ -15,3 +15,10 @@ footer a:hover {
     opacity: 0.75;
     color: white;
 }
+
+@media (max-width: 720px) {
+    footer {
+        font-size: 1em;
+        width: 298px;
+    }
+}
