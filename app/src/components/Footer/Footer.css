@@ -16,6 +16,11 @@ footer a:hover {
     color: white;
 }
 
+@media (max-width: 1500px) {
+    footer {
+        margin-top: 1em;
+    }
+}
 @media (max-width: 720px) {
     footer {
         font-size: 1em;
