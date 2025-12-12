@@ -1,4 +1,4 @@
-export const LinkPointer = (isVisible: boolean) => {
+export const LinkPointer = ({ isVisible }: {isVisible: boolean}) => {
     return (
         <>
             {isVisible && 
