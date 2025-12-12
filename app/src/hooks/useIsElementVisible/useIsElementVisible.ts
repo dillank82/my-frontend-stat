@@ -12,7 +12,8 @@ export const useIsElementVisible = ({ ref, threshold }: useIsElementVisibleProps
         const observer = new IntersectionObserver(
             (entries) => {
                 if (entries[0]) {
-                    setIsVisible(entries[0].isIntersecting)
+                    const isIntersecting = entries[0].isIntersecting
+                    setIsVisible(!isIntersecting)
                 }
             },
             {
