@@ -4,3 +4,9 @@
     width: 25%;
     align-items: center;
 }
+
+@media (max-width: 661px) {
+    .detailed-stats {
+        width: 162px;
+    }
+}
