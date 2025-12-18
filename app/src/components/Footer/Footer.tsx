@@ -15,7 +15,10 @@ export const Footer = ({ portfolioLink }: FooterProps): ReactElement => {
     return (
         <>
             <footer>
-                <LinkPointer isVisible={isVisible}/>
+                <div className="link-pointers-container">
+                    <LinkPointer isVisible={isVisible}/>
+                    <LinkPointer isVisible={isVisible}/>
+                </div>
 
                 <span ref={ref}>my portfolio: <a href={portfolioLink}>{portfolioLink}</a></span>
                 <FillingDots />
