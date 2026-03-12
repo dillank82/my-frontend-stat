@@ -1,26 +1,26 @@
 # My Frontend Stat
-## Описание
-Веб-приложение разработанное для объективации и визуализации личного прогресса в изучении фронтенд-разработки.
-## Демонстрация
+## Description
+A web application designed to track and quantify personal progress in learning frontend development.
+## Live Demo
 https://dillank-frontend-stat.vercel.app
-## Технологии
-Frontend: React, Redux Toolkit, Vite, Jest (юнит-тестирование).
+## Tech stack
+Frontend: React, Redux Toolkit, Vite, Jest (unit-testing).
 Backend: Node.js, Express, MongoDB.
-Типизация: TypeScript.
-Организация: pnpm Workspaces (Монорепозиторий)
-## Почему я это сделал?
-Проект был создан для решения проблемы мотивации и объективной оценки прогресса во время самостоятельного изучения веб-разработки, а также для демонстрации навыков работы с основным стэком технологий и практического обучения разработке бэкенда.
-## Особенности реализации
-- Монорепозиторная архитектура выбрана для унификации управления зависимостями между фронтендом и бэкендом; а pnpm workspaces позволил автоматизировать запуск fullstack-среды, что значительно упростило процесс разработки и отладки;
-- Использование одного стека для работы с локальным UI-состоянием и асинхронными запросами позволило упростить архитектуру приложения и снизить сложность для дальнейшей поддержки. RTK был выбран из-за его эффективности в снижении бойлерплейта и качественного DX;
-- Для взаимодействия с БД используется Mongoose. Основная причина — строгое соблюдение схем данных, что критически важно для синхронизации с TypeScript-интерфейсами на клиенте и предотвращения рассинхронизации типов;
-- UI реализует реактивное отображение информации о статусе асинхронного запроса в БД (успех/загрузка/ошибка);
-- Верстка базируется на семантической разметке и использовании Flexbox, что гарантирует адаптивность интерфейса. Визуальные элементы (включая SVG окружность прогресса) инкапсулированы в переиспользуемые компоненты, что исключает необходимость в тяжелых сторонних графических библиотеках.
-## Как запустить
-Команды:
-1) Установка зависимостей: 
+Typing: TypeScript.
+Organization: pnpm Workspaces (Monorepository)
+## Motivation
+The project was created to solve the problem of motivation and objective assessment of progress during independent learning of web development, as well as to demonstrate skills in working with the main stack of technologies and practical training in backend development.
+## Features
+- The monorepo architecture was chosen to unify dependency management between the frontend and the backend; pnpm workspaces allowed to automate the launch of a fullstack environment, which greatly simplified the development and debugging process;
+- Using a single stack to handle local UI state and asynchronous requests simplified the application architecture and reduced complexity for future support. RTK was chosen for its effectiveness in reducing boiler plate and providing a high-quality DX;
+- Mongoose is used to interact with the database. The main reason is strict adherence to data schemas, which is critical for synchronization with TypeScript interfaces on the client and preventing type misalignment;
+- The UI implements reactive display of information about the status of an asynchronous request to the database (success/loading/error);
+- The layout is based on semantic markup and the use of Flexbox, which guarantees the adaptability of the interface. Visual elements (including the SVG progress circle) are encapsulated in reusable components, eliminating the need for heavy third-party graphics libraries.
+## How to launch
+Commands:
+1) Installing dependencies: 
 ```pnpm i```
-2) Локальный запуск:
+2) Local launch:
 ```pnpm start```
-## Будущее
-Внедрение React Router для реализации страницы с интерфейсом обновления данных БД и соответственно страницы аутентификации для ограничения доступа к ней.
+## Future
+Implementing React Router to create a page with a database update interface and an authentication page to restrict access to it.
