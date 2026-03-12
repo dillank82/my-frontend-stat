@@ -1,4 +1,7 @@
 # My Frontend Stat
+
+[Читать на русском](README.ru.md)
+
 ## Description
 A web application designed to track and quantify personal progress in learning frontend development.
 ## Live Demo
