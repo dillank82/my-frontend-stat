@@ -6,6 +6,7 @@
 A web application designed to track and quantify personal progress in learning frontend development.
 ## Live Demo
 https://dillank-frontend-stat.vercel.app
+![preview](./assets/preview.jpg)
 ## Tech stack
 Frontend: React, Redux Toolkit, Vite, Jest (unit-testing).
 Backend: Node.js, Express, MongoDB.
