@@ -13,9 +13,8 @@ const PORT = process.env.PORT || 3000
 
 const corsOptions = {
     origin: ['http://localhost:5173', 'https://dillank-frontend-stat.vercel.app'],
-    methods: ['GET', 'PATCH', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization'],
-    credentials: true,
+    methods: ['GET', 'OPTIONS'],
+    allowedHeaders: ['Content-Type'],
     optionsSuccessStatus: 200
 }
 
