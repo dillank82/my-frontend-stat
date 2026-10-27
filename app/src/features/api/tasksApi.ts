@@ -1,4 +1,4 @@
-import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react"
+import { baseApi } from "./baseApi"
 
 export interface tasksApiType {
     siteId: string
@@ -8,18 +8,14 @@ export interface tasksApiType {
     orderIndex: number
 }
 
-const URL = (import.meta.env.VITE_URI || 'http://localhost:3000') + '/sites'
-
-export const tasksApi = createApi({
-    reducerPath: 'tasksApi',
-    baseQuery: fetchBaseQuery({ baseUrl: URL }),
+export const tasksApi = baseApi.injectEndpoints({
     endpoints: (builder) => ({
         getAllSites: builder.query<tasksApiType[], void>({
-            query: () => '/'
+            query: () => '/sites'
         }),
         getSiteById: builder.query<tasksApiType, Partial<tasksApiType>>({
             query: ({ siteId }) => ({
-                url: `/${siteId}`
+                url: `sites/${siteId}`
             })
         })
     })
