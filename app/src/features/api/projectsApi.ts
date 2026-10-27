@@ -9,21 +9,11 @@ const URL = (import.meta.env.VITE_URI || 'http://localhost:3000') + '/projects'
 export const projectsApi = createApi({
     reducerPath: 'projectsApi',
     baseQuery: fetchBaseQuery({ baseUrl: URL }),
-    tagTypes: ['Projects'],
     endpoints: (builder) => ({
         getProjects: builder.query<projectsApiType, void>({
-            query: () => '/',
-            providesTags: ['Projects']
-        }),
-        setProjects: builder.mutation<projectsApiType, Partial<projectsApiType>>({
-            query: (body) => ({
-                url: '/',
-                method: 'PATCH',
-                body
-            }),
-            invalidatesTags: ['Projects']
+            query: () => '/'
         })
     })
 })
 
-export const { useGetProjectsQuery, useSetProjectsMutation } = projectsApi
+export const { useGetProjectsQuery } = projectsApi
