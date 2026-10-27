@@ -9,21 +9,11 @@ const URL = (import.meta.env.VITE_URI || 'http://localhost:3000') + '/time'
 export const timeApi = createApi({
     reducerPath: 'timeApi',
     baseQuery: fetchBaseQuery({ baseUrl: URL }),
-    tagTypes: ['Time'],
     endpoints: (builder) => ({
         getTime: builder.query<timeApiType, void>({
-            query: () => '/',
-            providesTags: ['Time'],
-        }),
-        setTime: builder.mutation<timeApiType, Partial<timeApiType>>({
-            query: (body) => ({
-                url: '/',
-                method: 'PATCH',
-                body
-            }),
-            invalidatesTags: ['Time']
+            query: () => '/'
         })
     })
 })
 
-export const { useGetTimeQuery, useSetTimeMutation } = timeApi
+export const { useGetTimeQuery } = timeApi
