@@ -28,6 +28,9 @@ app.use('/sites', sitesRoutes)
 const startServer = async() => {
     try {
         await connectDB()
+        // In production the DB user is read-only, so seed fails here and logs an error.
+        // That is expected: seed only matters for a fresh local database, the server runs fine without it.
+        // TODO: This error will persist until the seeding logic is moved out of the server startup into a separate script.
         await seed()
         app.listen(PORT, () => console.log(`Server started on http://localhost:${PORT}`))
     } catch (error) {
